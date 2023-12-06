@@ -1,4 +1,4 @@
-#LaunchPad Quick Start for Kotlin Multiplatform
+# LaunchPad Quick Start for Kotlin Multiplatform
 
 LaunchPad is an open-source, free-to-use project designed to empower you to bring your Kotlin Multiplatform projects to market faster. It provides a collection of tools and utilities to streamline your development process and eliminate the need for
 reinventing the wheel.

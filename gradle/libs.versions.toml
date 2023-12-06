@@ -1,0 +1,38 @@
+[versions]
+agp = "8.1.4"
+dokka = "1.9.10"
+firebaseAnalyticsKtx = "21.5.0"
+kermit = "2.0.2"
+kmpLaunchpadUtilsDomain = "0.0.1"
+koin = "3.5.0"
+kotlin = "1.9.21"
+kotlinxCoroutinesCore = "1.7.3"
+kotlinxDatetime = "0.5.0"
+kotlinxSerializationJson = "1.5.1"
+ktLint-gradle = "11.6.1"
+kvault = "1.12.0"
+napier = "2.6.1"
+
+compile-sdk = "34"
+min-sdk = "24"
+launchpad-compose = "0.0.1"
+
+[libraries]
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx", version.ref = "firebaseAnalyticsKtx" }
+kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+kmp-launchpad-utils-domain = { group = "com.github.bottlerocketstudios", name = "kmp-launchpad-utils-domain", version.ref = "kmpLaunchpadUtilsDomain" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-stdlib-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kvault = { module = "com.liftric:kvault", version.ref = "kvault" }
+napier = { module = "io.github.aakira:napier", version.ref = "napier" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktLint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktLint-gradle" }
