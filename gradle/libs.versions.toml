@@ -15,7 +15,7 @@ napier = "2.6.1"
 
 compile-sdk = "34"
 min-sdk = "24"
-launchpad-compose = "0.0.1"
+launchpad-utils = "0.0.1"
 
 [libraries]
 firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx", version.ref = "firebaseAnalyticsKtx" }

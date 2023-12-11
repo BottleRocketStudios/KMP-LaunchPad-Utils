@@ -62,7 +62,7 @@ ktlint {
 }
 
 group = "com.github.bottlerocketstudios"
-version = "${libs.versions.launchpad.compose.get()}-SNAPSHOT"
+version = libs.versions.launchpad.utils.get()
 
 publishing {
     publications {
