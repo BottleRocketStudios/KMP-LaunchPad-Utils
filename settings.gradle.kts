@@ -8,9 +8,14 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositories {
-        // Developer NOTE: Use mavenLocal() for debugging as necessary.
-        mavenLocal()
+    repositories {maven {
+        url = uri("https://maven.pkg.github.com/BottleRocketStudios/kmp-ignite")
+        credentials {
+            username = System.getenv("REPO_READ_USER")
+            password = System.getenv("REPO_READ_TOKEN")
+        }
+    }
+//        mavenLocal()
         google()
         mavenCentral()
     }
