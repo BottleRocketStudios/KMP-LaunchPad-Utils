@@ -2,11 +2,19 @@ package com.bottlerocketstudios.launchpad.utils.logger
 
 import com.bottlerocketstudios.launchpadutilsdomain.BuildConfigProvider
 import com.bottlerocketstudios.launchpadutilsdomain.logger.LoggingManager
+import io.github.aakira.napier.Antilog
+import io.github.aakira.napier.DebugAntilog
 import io.github.aakira.napier.Napier
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
 class NapierLogger(private val loggingEnabled: Boolean) : LoggingManager {
+
+    init {
+        if (loggingEnabled) {
+            Napier.base(DebugAntilog())
+        }
+    }
 
     override fun d(tag: String?, message: String?, t: Throwable?) {
         if (loggingEnabled) {
